@@ -21,21 +21,6 @@ pip install scipy matplotlib scikit-learn unrar
    ```
 2. Run the script to process and visualize spectrograms.
 
-## Example
-```python
-from scipy.io import wavfile
-from scipy import signal
-import matplotlib.pyplot as plt
-
-sample_rate, samples = wavfile.read("audio.wav")
-frequencies, times, spectrogram = signal.spectrogram(samples, sample_rate)
-
-plt.pcolormesh(times, frequencies, spectrogram)
-plt.ylabel('Frequency [Hz]')
-plt.xlabel('Time [sec]')
-plt.show()
-```
-
 ## License
 MIT
 
